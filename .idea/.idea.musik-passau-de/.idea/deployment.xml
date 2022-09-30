@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="wp13881958.server-he.de" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="wp13881958.server-he.de">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/musik-passau.sln" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/App.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/App.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Angebote.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Angebote.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Angebote.razor.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Ausbildung.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Ausbildung.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Ausbildung.razor.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Example/Counter.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Example/Counter.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Example/FetchData.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Example/FetchData.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Gesangscoaching.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Gesangscoaching.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Gesangscoaching.razor.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Index.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Index.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Klavierunterricht.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Klavierunterricht.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Klavierunterricht.razor.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Kontakt.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Kontakt.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Kontakt.razor.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/MusikalischeUntermalung.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/MusikalischeUntermalung.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/MusikalischeUntermalung.razor.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/OhneMusik.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/OhneMusik.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/OhneMusik.razor.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Preise.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Preise.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Preise.razor.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Schuelerstimmen.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Schuelerstimmen.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Schuelerstimmen.razor.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Start.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Start.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Start.razor.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Ueber.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Ueber.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Pages/Ueber.razor.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Program.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Properties/launchSettings.json" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/AnchorLink.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/AnchorLink.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/LinkCard.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/LinkCard.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/MainLayout.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/MainLayout.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/MainLayout.razor.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/MoreButton.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/MoreButton.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/NavMenu.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/NavMenu.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/NavMenu.razor.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/SurveyPrompt.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/SurveyPrompt.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/VertragInfoModal.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/Shared/VertragInfoModal.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/ViewModels/PreisInfo.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/ViewModels/Schuelerstimme.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/_Imports.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/_Imports.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/musik-passau.csproj" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/obj/Debug/net6.0/musik-passau.AssemblyInfo.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/obj/Debug/net6.0/musik-passau.GeneratedMSBuildEditorConfig.editorconfig" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/obj/Debug/net6.0/musik-passau.GlobalUsings.g.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/css/app.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/css/bootstrap/bootstrap.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/css/bootstrap/bootstrap.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/css/open-iconic/FONT-LICENSE" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/css/open-iconic/ICON-LICENSE" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/css/open-iconic/README.md" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/css/open-iconic/font/fonts/open-iconic.eot" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/css/open-iconic/font/fonts/open-iconic.otf" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/css/open-iconic/font/fonts/open-iconic.svg" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/css/open-iconic/font/fonts/open-iconic.woff" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/favicon.ico" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/4S8A2103.jpg" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2932.JPG" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2933.JPG" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2943.JPG" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2944.JPG" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2946.JPG" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2948.JPG" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2953.JPG" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2965.JPG" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2967.JPG" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2970.JPG" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2972.JPG" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2974.JPG" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2980.JPG" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2983.jpg" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_3011.JPG" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_3012.JPG" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/Jasmin_foto.png" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/Kontakt_background.jpg" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/Notenschlüssel.png" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/Preise_bg.jpg" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/button.png" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/ganzheitlicher_Klavierunterricht_bg.jpg" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/ganzheitliches_Gesangscoaching_bg.jpg" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/handwriting_1.png" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/handwriting_2.png" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/musikalische_untermalung_bg.jpg" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/images/schulerstimmen_bg.jpg" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/index.html" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/js/letterJustifier.js" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/js/lib.js" web="/" />
+            <mapping local="$PROJECT_DIR$/musik-passau/wwwroot/sample-data/weather.json" web="/" />
+            <mapping local="/usr/local/share/dotnet/sdk/6.0.400/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_6_default.editorconfig" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
