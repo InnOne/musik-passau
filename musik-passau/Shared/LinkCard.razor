@@ -1,0 +1,22 @@
+<div class="col-md-3 row text-black">
+    <img class="pb-2" src="@ImageSrc" alt="Sängerin" style="object-fit: cover; object-position: bottom; width: 100%"/>
+    <div class="text-center py-3" style="font-size: 1.2em">
+        @Text
+    </div>
+    <div class="p-0 text-center align-self-end">
+        <MoreButton href="@href"/>
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public string href { get; set; }
+
+    [Parameter]
+    public string Text { get; set; }
+
+    [Parameter]
+    public string ImageSrc { get; set; }
+
+}

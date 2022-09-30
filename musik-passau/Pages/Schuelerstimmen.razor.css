@@ -1,0 +1,7 @@
+.bg-schülerstimmen {
+    /*background-color: #e3c2a0;*/
+    background-image: url("images/schulerstimmen_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

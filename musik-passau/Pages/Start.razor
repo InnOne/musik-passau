@@ -1,0 +1,73 @@
+@using System.Timers
+@using System.Globalization
+
+<div class="fullHeight position-relative" style="overflow-x: hidden; max-width: 100vw">
+    <div id="main" class="mainImg position-absolute fullHeight" style="width: 100vw; filter: blur(@filterOutput); -webkit-filter: blur(@filterOutput); opacity: @opacityOutput">
+    </div>
+    
+    <div class="align-items-center row justify-content-center position-absolute fullHeight">
+        <div class="col-sm-9">
+            <div class="text-black h1 pb-2">
+                <div class="character_justify" style="overflow-x: hidden">ganzheitlicher Musikunterricht</div>
+            </div>
+            <div class="text">
+                Schon Musik hören macht etwas mit uns. Es kann uns fröhlich machen, an etwas erinnern oder Gefühle zum
+                Fliessen bringen. Wieviel mehr macht es mit uns, selbst Musik zu machen!
+                <br>
+                <br>
+                Wir lernen dabei über Grenzen hinauszuwachsen oder sich zu trauen uns vor anderen zu zeigen,
+                auszudrücken was wir fühlen, Freude daran zu haben wer wir sind und was wir können und anderen
+                Freude zu schenken beim Zuhören.
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+
+    private IFormatProvider numberProvider = new NumberFormatInfo() {NumberDecimalSeparator = "."};
+    //private bool hidetext = true;
+    private string filterOutput => $"{filter.ToString(numberProvider)}px";
+    private float filter = 0;
+    private string opacityOutput => opacity.ToString(numberProvider);
+    private float opacity = 1;
+
+    public Start()
+    {
+        StartAnimation();
+    }
+
+    private Timer timer;
+
+    private async void StartAnimation()
+    {
+        await Task.Delay(500);
+        timer = new Timer(10);
+        timer.Elapsed += TimerOnElapsed;
+        timer.AutoReset = true;
+
+        timer.Start();
+    }
+
+
+    private void TimerOnElapsed(object? sender, ElapsedEventArgs e)
+    {
+        if (filter < 6)
+        {
+            filter += 6f / 50;
+            opacity -= .4f / 50;
+        }
+        else
+        {
+            //hidetext = false;
+            timer.Dispose();
+        }
+
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void Callback(EventArgs obj)
+    {
+        StartAnimation();
+    }
+}

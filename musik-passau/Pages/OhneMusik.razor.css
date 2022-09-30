@@ -1,0 +1,7 @@
+.bg-grey {
+    background-image: url("images/Notenschlüssel.png");
+    background-position: center top 70%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #dfdad7;
+}

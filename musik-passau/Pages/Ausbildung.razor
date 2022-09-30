@@ -1,0 +1,31 @@
+@{
+    var ausbildung = "Ausbildung";
+    var ausbildungText = "Zweijährige Vollzeitausbildung in der Berufsfachschule für Musik in den Fächern Klavier,Ensembleleitung,Blockflöte, Elementare Musikpädagogik, Unterrichtsmethodik und Stimmbildung\n\nGesangsworkshop und Einzelunterricht in Speech Level Singing nach Seth Riggs bei Stephanie Borm";
+
+    var referenzen = "Referenzen";
+    var referenzenText = "Unterricht in Klavier, Gesang, Sopranblockflöte\nMusikalische Früherziehung in mehreren Kindergärten und privat\nMusicalgruppen als Sommerferienprojekt und im Kinderchor\nChorleitung mehrer Kirchenchöre, Kinderchöre und Landfrauenchor\nKlavierunterricht an der Mittelschule Fürstenzell, Projekt der Internationalen Stiftung zur Förderung von Kultur und Zivilisation München\nAuftritte als Sängerin bei Hochzeiten und Taufen";
+}
+
+<div id="@nameof(Ausbildung)" class="bg-ausbildung p-5 mt-3">
+
+    <div class="row" style="font-size: .9rem; line-height: 1.4em; letter-spacing: .2em">
+        <div class="col-sm">
+            <h1>@ausbildung</h1>
+            <p>
+                @ausbildungText
+            </p>
+        </div>
+
+        <div class="col-sm">
+            <h1>@referenzen</h1>
+            <p>
+                @referenzenText
+            </p>
+        </div>
+    </div>
+
+</div>
+
+@code {
+
+}

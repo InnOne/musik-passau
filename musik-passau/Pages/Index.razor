@@ -1,0 +1,30 @@
+﻿@page "/"
+@inject IJSRuntime JsRuntime
+
+<PageTitle>Index</PageTitle>
+
+<Start />
+<OhneMusik />
+<Angebote />
+<Gesangscoaching />
+<Klavierunterricht />
+<MusikalischeUntermalung />
+<Preise />
+<Ueber />
+<Ausbildung />
+<Schuelerstimmen />
+<Kontakt />
+
+@code
+{
+    protected override Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            JsRuntime.InvokeVoidAsync("Justify");
+            JsRuntime.InvokeVoidAsync("checkScrollSpy");
+        }
+
+        return base.OnAfterRenderAsync(firstRender);
+    }
+}

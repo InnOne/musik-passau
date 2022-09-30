@@ -1,0 +1,40 @@
+@using ViewModels
+<div class="modal fade" id="@guid" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Verträge</h5>
+                <button type="button" class="btn" aria-label="Close" @onclick="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="letter-spacing: .2em">
+                @foreach (var vertragInfo in VertragInfos)
+                {
+                    <div class="fw-bold">
+                        @vertragInfo.Titel
+                    </div>
+                    <p>
+                        @vertragInfo.Text
+                    </p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+
+    [Inject]
+    public IJSRuntime JSRuntime { get; set; }
+
+    private string guid = Guid.NewGuid().ToString();
+
+    [Parameter]
+    public VertragInfo[] VertragInfos { get; set; }
+
+    public async Task Open() => await JSRuntime.InvokeVoidAsync("showModal", args: guid);
+
+    public async Task Close() => await JSRuntime.InvokeVoidAsync("hideModal", args: guid);
+
+}

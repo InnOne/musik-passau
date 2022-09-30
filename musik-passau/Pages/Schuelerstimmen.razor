@@ -1,0 +1,72 @@
+@using ViewModels
+<div id="Schülerstimmen" class="bg-schülerstimmen p-5">
+
+    <div class="row text-center mb-3">
+        <h1>Schülerstimmen</h1>
+    </div>
+
+    <!--Carousel-->
+    <div id="stimmen" class="carousel slide" data-ride="carousel" data-interval="6000">
+
+        <div class="carousel-inner">
+
+            @for (var index = 0; index < schuelerstimmen.Length; index++)
+            {
+                var schuelerstimme = schuelerstimmen[index];
+                <div class="carousel-item @(index == 0 ? "active" : "")">
+                    <div class="d-flex justify-content-center">
+                        <div class="row m-1 p-3" style="width: 80%;">
+                            <div class="col-sm text-center pb-1">
+                                <img src="@schuelerstimme.ImageSrc" style="height: 40vh; object-fit: contain" alt="Ein Schüler">
+                            </div>
+                            <div class="col-sm p-2 align-self-center"
+                                 style="font-size: .9rem; line-height: 1.4em; letter-spacing: .1em">
+                                <h5>
+                                    <strong>@schuelerstimme.Titel</strong>
+                                </h5>
+                                <p>
+                                    @schuelerstimme.Text
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!--Pfeile rechts und links-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#stimmen" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#stimmen" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+</div>
+
+@code {
+    
+    private Schuelerstimme[] schuelerstimmen;
+
+    public Schuelerstimmen()
+    {
+        schuelerstimmen = new[]
+        {
+            new Schuelerstimme
+            {
+                Titel = "Laura, 18, Klavierschülerin seit 2019",
+                ImageSrc = "images/IMG_2965.JPG",
+                Text = "Der Unterricht bei Jasmin macht mir unglaublich viel Spaß. Sie hat mir gezeigt, dass man nie zu alt ist, um dad Spielen eines komplett neuen Instrumentes zu erlernen und motiviert mich mit ihrer lockeren Art und ihrer besonderen Unterrichtsmethoden jede Woche auf's Neue. Ich bin sehr froh darüber, den Kontakt mit ihr aufgenommen zu haben."
+            },
+            new Schuelerstimme
+            {
+                Titel = "Jasmin, 18, Klavierschülerin seit 2019",
+                ImageSrc = "images/IMG_2946.JPG",
+                Text = "Der Unterricht bei Jasmin macht mir unglaublich viel Spaß. Sie hat mir gezeigt, dass man nie zu alt ist, um dad Spielen eines komplett neuen Instrumentes zu erlernen und motiviert mich mit ihrer lockeren Art und ihrer besonderen Unterrichtsmethoden jede Woche auf's Neue. Ich bin sehr froh darüber, den Kontakt mit ihr aufgenommen zu haben."
+            },
+        };
+    }
+
+}
