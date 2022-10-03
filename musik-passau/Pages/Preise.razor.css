@@ -11,7 +11,7 @@
 }
 
 .price-box {
-    height: 30%;
+    max-height: 30%;
     width: 80%;
     position: relative;
     bottom: 10%;

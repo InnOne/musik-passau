@@ -1,15 +1,25 @@
 <div id="seite2" class="container-fluid bg-grey">
-    <div class="align-items-center row justify-content-center fullHeight90">
-        <div class="col-md-7">
-            <div class="text-black h1 pb-2">
-                <div style="text-align: center; letter-spacing: .5em">
-                    „Ohne Musik wäre
-                </div>
-                <div class="character_justify" style="overflow-x: hidden">
-                    das Leben ein Irrtum“
-                </div>
+    <div class="align-items-center row justify-content-center px-4 py-5">
+        <div class="col-md-7 px-0 py-3">
+            <div class="text-black h1 pb-4">
+                
+                @if (!isMobileSmall)
+                {
+                    <div style="text-align: center; letter-spacing: .5em">
+                        „Ohne Musik wäre
+                    </div>
+                    <div class="character_justify" style="overflow-x: hidden">
+                        das Leben ein Irrtum“
+                    </div>
+                }
+                else
+                {
+                    <div style="text-align: center; letter-spacing: .5em">
+                        „Ohne Musik wäre das Leben ein Irrtum“
+                    </div>
+                }
             </div>
-            <div class="text">
+            <div class="text" style="font-size: 1em">
                 In unserer Welt schwingen Millionen Frequenzen, ohne die unser Dasein undenkbar wäre, so auch Musik.
                 Die Wellen der Töne durchdringen mit Leichtigkeit unsere festen Körper und verhelfen mit ihren
                 Schwingungen
@@ -20,6 +30,9 @@
     </div>
 </div>
 
+<MediaQuery Media="@Breakpoints.XSmallDown" @bind-Matches="isMobileSmall"/>
+
 @code {
-    
+
+    private bool isMobileSmall;
 }

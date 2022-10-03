@@ -16,16 +16,16 @@
                 <div class="carousel-item @(index == 0 ? "active" : "")">
                     <div class="d-flex justify-content-center">
                         <div class="row m-1 p-3" style="width: 80%;">
-                            <div class="col-sm text-center pb-1">
-                                <img src="@schuelerstimme.ImageSrc" style="height: 40vh; object-fit: contain" alt="Ein Schüler">
+                            <div class="col-sm text-center align-self-center pb-1">
+                                <img src="@schuelerstimme.ImageSrc" style="max-width: 100%;max-height: 40vh; object-fit: contain" alt="Ein Schüler">
                             </div>
                             <div class="col-sm p-2 align-self-center"
                                  style="font-size: .9rem; line-height: 1.4em; letter-spacing: .1em">
                                 <h5>
-                                    <strong>@schuelerstimme.Titel</strong>
+                                    <strong>@schuelerstimme.Name, @((int) ((DateTime.Now - schuelerstimme.Geburtstag).Days / 365.25)), @(schuelerstimme.SchuelerTyp == SchuelerTyp.Gesang ? "Gesangsschüler" : "Klavierschüler")@(schuelerstimme.Maennlich ? "" : "in") seit @schuelerstimme.SchuelerSeit</strong>
                                 </h5>
-                                <p>
-                                    @schuelerstimme.Text
+                                <p class="text text-start">
+                                    @schuelerstimme.Bewertung
                                 </p>
                             </div>
                         </div>
@@ -47,7 +47,7 @@
 </div>
 
 @code {
-    
+
     private Schuelerstimme[] schuelerstimmen;
 
     public Schuelerstimmen()
@@ -56,16 +56,40 @@
         {
             new Schuelerstimme
             {
-                Titel = "Laura, 18, Klavierschülerin seit 2019",
-                ImageSrc = "images/IMG_2965.JPG",
-                Text = "Der Unterricht bei Jasmin macht mir unglaublich viel Spaß. Sie hat mir gezeigt, dass man nie zu alt ist, um dad Spielen eines komplett neuen Instrumentes zu erlernen und motiviert mich mit ihrer lockeren Art und ihrer besonderen Unterrichtsmethoden jede Woche auf's Neue. Ich bin sehr froh darüber, den Kontakt mit ihr aufgenommen zu haben."
+                Name = "Thea",
+                Geburtstag = new DateTime(1999, 6, 1),
+                SchuelerSeit = 2021,
+                ImageSrc = "images/schueler/thea.jpg",
+                Bewertung = "Ich bin gesanglich komplett planlos zu Jasmin gekommen und innerhalb des letzten Jahres hat sie mir gezeigt, was ich mit meiner Stimme so alles kann. Und vor allem, wie einfach es sein kann.\nIch habe mich jede Woche auf die Stunde gefreut, was vor allem auch an Jasmins warmer, unterstützender Art und ihren bildhaften Erklärungen lag. Und auch daran, dass ich neben Gesangslektionen häufig auch die eine oder andere Lektion fürs Leben mitnehmen konnte.\nInzwischen fühle ich mich in allen Tonlagen viel sicherer und bin selbst beeindruckt, wieviel klarer meine Stimme klingt.\nIch bin sehr dankbar für die Unterstützung und kann sie wärmstens weiterempfehlen!",
+                SchuelerTyp = SchuelerTyp.Gesang
             },
             new Schuelerstimme
             {
-                Titel = "Jasmin, 18, Klavierschülerin seit 2019",
-                ImageSrc = "images/IMG_2946.JPG",
-                Text = "Der Unterricht bei Jasmin macht mir unglaublich viel Spaß. Sie hat mir gezeigt, dass man nie zu alt ist, um dad Spielen eines komplett neuen Instrumentes zu erlernen und motiviert mich mit ihrer lockeren Art und ihrer besonderen Unterrichtsmethoden jede Woche auf's Neue. Ich bin sehr froh darüber, den Kontakt mit ihr aufgenommen zu haben."
+                Name = "Nicole",
+                Geburtstag = new DateTime(1997, 6, 1),
+                SchuelerSeit = 2022,
+                ImageSrc = "images/schueler/nicole.jpg",
+                Bewertung = "Bereits in meiner ersten Klavierstunde wurde schnell deutlich, dass Jasmin in der Musik nicht nur sehr erfahren, sondern dort auch zu Hause ist.\nAuch seither fühle ich mich in jeder einzelnen Einheit besonders wohl und kann ohne Druck, aber mit trotzdem spürbaren Fortschritten, lernen.\n\nJasmin ist wirklich verständnisvoll und jederzeit darauf bedacht, ihren Schülern so vieles wie möglich zur Unterstützung zu bieten. Sie ergänzt die Lektionen aus dem Buch „Schneemann's Traum“ wunderbar mit der zugehörigen Musiktheorie und teilt zusätzlich ihre eigenen Gedankenstützen. So bleibt auch das Wissen eines Schülers, der nach klassischen Methoden Klavierspielen lernt, nicht aus.",
+                SchuelerTyp = SchuelerTyp.Klavier
             },
+            new Schuelerstimme
+            {
+                Name = "Annette",
+                Geburtstag = new DateTime(1967, 6, 1),
+                SchuelerSeit = 2022,
+                ImageSrc = "images/schueler/annette.jpg",
+                Bewertung = "Obwohl ich oft eine Melodie summe und im Auto gerne laut mitsinge, habe ich immer gedacht, ich kann nicht singen.\n\nIm März 2022 habe ich dann mit dem Gesangscoaching bei Jasmin gestartet, für mich eröffnete sich eine kleine Welt, die ich schon immer faszinierend fand.\nBei ihr lerne ich meine Stimme kennen und - dank der vielen sofort umsetzbaren Anregungen und Übungen - dieses wundervolle Organ auch zu benutzen. Mein Gesang bekommt einen runden und natürlichen Ausdruck und das Singen fühlt sich leicht an. Für die Zeit bis zur nächsten Stunde füttert sie mich mit Online-Material und so macht das Üben sehr viel Spaß.",
+                SchuelerTyp = SchuelerTyp.Gesang
+            },
+            new Schuelerstimme
+            {
+                Name = "Mareen",
+                Geburtstag = new DateTime(1992, 6, 1),
+                SchuelerSeit = 2022,
+                ImageSrc = "images/schueler/mareen.jpg",
+                Bewertung = "Ich fühle mich bei Jasmin sehr gut aufgehoben und bin froh, sie als Klavierlehrerin zu haben.\nIch freue mich jede Woche aufs Neue von ihr zu lernen!",
+                SchuelerTyp = SchuelerTyp.Klavier
+            }
         };
     }
 

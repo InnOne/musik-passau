@@ -1,9 +1,13 @@
 ﻿@inherits LayoutComponentBase
 
-<div>
+<AnchorLinkFixer />
+
+<MediaQueryList>
     <NavMenu/>
 
     <main>
         @Body
     </main>
-</div>
+    
+    <BottomBar />
+</MediaQueryList>

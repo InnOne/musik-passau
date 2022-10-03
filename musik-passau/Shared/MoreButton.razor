@@ -1,8 +1,24 @@
-<AnchorLink class="text-black button-link overflow-visible p-2" href="@href">
-   mehr erfahren
-</AnchorLink>
+@if (Titel.Length <= 7)
+{
+    <a class="text-black button-link small overflow-visible p-3" href="@href">
+        @Titel
+    </a>
+}
+else
+{
+    <a class="text-black button-link overflow-visible p-3" href="@href">
+        @Titel
+    </a>
+}
 
 @code {
-   [Parameter]
-   public string href { get; set; }
+
+    private bool isSmallTitle => Titel.Length <= 7;
+
+    [Parameter]
+    public string href { get; set; }
+
+    [Parameter]
+    public string Titel { get; set; } = "mehr erfahren";
+
 }

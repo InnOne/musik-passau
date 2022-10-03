@@ -15,29 +15,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a95c710-28b4-4b6b-84ff-0a89e2c5d539" name="Changes" comment="fix build">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.musik-passau-de/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.musik-passau-de/.idea/webServers.xml" afterDir="false" />
+    <list default="true" id="6a95c710-28b4-4b6b-84ff-0a89e2c5d539" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/musik-passau/.github/workflows/deploy.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/musik-passau/Pages/Datenschutz.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/musik-passau/Pages/Hochzeitsduo.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/musik-passau/Pages/Impressum.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/musik-passau/Shared/AnchorLinkFixer.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/musik-passau/Shared/BottomBar.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/musik-passau/Shared/ExpandableText.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/musik-passau/Shared/ExpandableText.razor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/button_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/duo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/schueler/annette.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/schueler/mareen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/schueler/nicole.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/schueler/thea.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.musik-passau-de/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.musik-passau-de/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Pages/Angebote.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Pages/Angebote.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Pages/Ausbildung.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Pages/Ausbildung.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Pages/Gesangscoaching.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Pages/Gesangscoaching.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Pages/Klavierunterricht.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Pages/Klavierunterricht.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Pages/Kontakt.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Pages/Kontakt.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Pages/MusikalischeUntermalung.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Pages/MusikalischeUntermalung.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Pages/Hochzeitsduo.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Pages/OhneMusik.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Pages/OhneMusik.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Pages/Preise.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Pages/Preise.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Pages/Preise.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Pages/Preise.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Pages/Schuelerstimmen.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Pages/Schuelerstimmen.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Pages/Start.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Pages/Start.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Pages/Start.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Pages/Start.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Pages/Ueber.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Pages/Ueber.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Shared/AnchorLink.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Shared/LinkCard.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Shared/LinkCard.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Shared/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Shared/MoreButton.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Shared/MoreButton.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Shared/NavMenu.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/musik-passau/Shared/VertragInfoModal.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/Shared/VertragInfoModal.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/ViewModels/Schuelerstimme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/ViewModels/Schuelerstimme.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/_Imports.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/musik-passau/musik-passau.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/musik-passau.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/4S8A2103.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/4S8A2103.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2932.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2932.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2933.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2933.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2943.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2943.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2944.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2944.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2946.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2946.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2948.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2948.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2953.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2953.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2965.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2965.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2967.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2967.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2970.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2970.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2972.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2972.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2974.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2974.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2980.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2980.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2983.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_2983.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_3011.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_3011.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_3012.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/IMG_3012.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/4S8A2103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/images/button.png" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/images/button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musik-passau/wwwroot/js/lib.js" beforeDir="false" afterPath="$PROJECT_DIR$/musik-passau/wwwroot/js/lib.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +87,14 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0470666dd6034f0db821d67d7907824420480/f0/c05d8f71/PageTitle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/780ccc91f714478b88861aa0318158d335480/e5/da79ee16/LayoutComponentBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ce489824899e419394e136b1ce1e79717200/00/b73ae8e6/MediaQuery.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ce489824899e419394e136b1ce1e79717200/b2/2fcb2053/Breakpoints.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/julianbildner/RiderProjects/musik-passau-de/musik-passau/Pages/Ausbildung.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/julianbildner/RiderProjects/musik-passau-de/musik-passau/Pages/Gesangscoaching.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/julianbildner/RiderProjects/musik-passau-de/musik-passau/Pages/Start.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/julianbildner/RiderProjects/musik-passau-de/musik-passau/Pages/Ueber.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/julianbildner/RiderProjects/musik-passau-de/musik-passau/Shared/LinkCard.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/julianbildner/RiderProjects/musik-passau-de/musik-passau/Shared/VertragInfoModal.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/julianbildner/RiderProjects/musik-passau-de/musik-passau/Shared/VertragInfoModal.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/musik-passau/wwwroot/css/bootstrap/bootstrap.min.css.map" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -91,10 +123,6 @@
   }
 }</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.musik-passau: Watch">
-    <configuration name="Publish musik-passau to IIS" type="DotNetMsBuildPublish" factoryName="Publish to IIS">
-      <riderPublish configuration="Release" platform="Any CPU" publish_profile="&lt;no publish profile&gt;" uuid_high="-6592636497779539544" uuid_low="-5475566161582190591" />
-      <method v="2" />
-    </configuration>
     <configuration name="Publish" type="DotNetPublishAndUpload" factoryName="Publish to custom server">
       <riderPublish configuration="Release" platform="Any CPU" runtime="Portable" self_contained="true" server_id="762110ec-d1cc-473c-a0ea-889491cba0fc" serverName="wp13881958.server-he.de" target_framework="net6.0" uuid_high="-6592636497779539544" uuid_low="-5475566161582190591" />
       <method v="2" />
@@ -133,7 +161,6 @@
       <item itemvalue=".NET Launch Settings Profile.musik-passau: Watch" />
       <item itemvalue=".NET Launch Settings Profile.musik-passau" />
       <item itemvalue="Publish to custom server.Publish" />
-      <item itemvalue="Publish to IIS.Publish musik-passau to IIS" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -145,7 +172,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664380291074</updated>
       <workItem from="1664380297767" duration="49537000" />
-      <workItem from="1664475493622" duration="27928000" />
+      <workItem from="1664475493622" duration="85673000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1664557709229</created>
@@ -175,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664561944983</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="some fixes">
+      <created>1664568949996</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664568949996</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +234,8 @@
     <MESSAGE value="add .gitignore" />
     <MESSAGE value="smøl changes" />
     <MESSAGE value="fix build" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix build" />
+    <MESSAGE value="some fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

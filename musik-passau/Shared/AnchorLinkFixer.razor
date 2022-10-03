@@ -1,0 +1,40 @@
+@code {
+
+    protected override void OnInitialized()
+    {
+        NavigateToElement();
+        UriHelper.LocationChanged += OnLocationChanges;
+    }
+    
+    private void OnLocationChanges(object? sender, LocationChangedEventArgs locationChangedEventArgs) => NavigateToElement();
+
+    private void NavigateToElement()
+    {
+        var url = UriHelper.Uri;
+        var fragment = new Uri(url).Fragment;
+
+        if (string.IsNullOrEmpty(fragment))
+            return;
+        
+        var elementId = fragment.StartsWith("#") ? fragment.Substring(1) : fragment;
+
+        if (!string.IsNullOrEmpty(elementId))
+            ScrollToTarget(elementId).ConfigureAwait(false);
+    }
+
+    [Inject]
+    protected IJSRuntime JsInterop { get; set; } = default!;
+
+    [Inject]
+    public NavigationManager UriHelper { get; set; } = default!;
+    
+    private async Task ScrollToTarget(string targetId)
+    {
+        if (!string.IsNullOrEmpty(targetId))
+        {
+            // If the target ID has been specified, we know this is an anchor link that we need to scroll
+            // to, so we call the JavaScript method to take care of this for us.
+            await JsInterop.InvokeVoidAsync("anchorLink.scrollIntoView", targetId);
+        }
+    }
+}

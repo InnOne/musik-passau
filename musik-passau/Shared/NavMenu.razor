@@ -1,34 +1,34 @@
-﻿<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top shadow" style="letter-spacing: 0.1em; font-size: .9rem;">
+﻿<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top shadow" style="letter-spacing: 0.1em; font-size: .9rem; min-height: var(--navbarHeight);">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-1 my-1">
                 <li class="nav-item">
-                    <AnchorLink href="#main" class="nav-link">Start</AnchorLink>
+                    <a href="#main" class="nav-link active">Start</a>
                 </li>
                 <li class="nav-item">
-                    <AnchorLink href="#seite3" class="nav-link">Angebote</AnchorLink>
+                    <a href="#seite3" class="nav-link">Angebote</a>
                 </li>
                 <li class="nav-item">
-                    <AnchorLink href="#gesangscoaching" class="nav-link">Gesangscoaching</AnchorLink>
+                    <a href="#gesangscoaching" class="nav-link">Gesangscoaching</a>
                 </li>
                 <li class="nav-item">
-                    <AnchorLink href="#klavierunterricht" class="nav-link">Klavierunterricht</AnchorLink>
+                    <a href="#klavierunterricht" class="nav-link">Klavierunterricht</a>
                 </li>
                 <li class="nav-item">
-                    <AnchorLink href="#hochzeitsduo" class="nav-link">Hochzeitsduo</AnchorLink>
+                    <a href="#hochzeitsduo" class="nav-link">Hochzeitsduo</a>
                 </li>
                 <li class="nav-item">
-                    <AnchorLink href="#preise" class="nav-link">Preise</AnchorLink>
+                    <a href="#preise" class="nav-link">Preise</a>
                 </li>
                 <li class="nav-item">
-                    <AnchorLink href="#über-mich" class="nav-link">Über mich</AnchorLink>
+                    <a href="#ueber" class="nav-link">Über mich</a>
                 </li>
                 <li class="nav-item">
-                    <AnchorLink href="#kontakt" class="nav-link">Kontakt</AnchorLink>
+                    <a href="#kontakt" class="nav-link">Kontakt</a>
                 </li>
             </ul>
         </div>
@@ -36,13 +36,4 @@
 </nav>
 
 @code {
-    private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-
 }

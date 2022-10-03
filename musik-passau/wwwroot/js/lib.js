@@ -1,4 +1,4 @@
-function checkScrollSpy(){
+function checkScrollSpy() {
     var scrollSpys = [].slice.call(document.querySelectorAll("[data-bs-spy=\"scroll\"]"));
     var scrollSpysLength = scrollSpys.length;
 
@@ -9,12 +9,19 @@ function checkScrollSpy(){
     }
 }
 
-function showModal(s){
+function showModal(s) {
     $(`#${s}`).modal('show');
 }
 
-function hideModal(s){
+function hideModal(s) {
     $(`#${s}`).modal('hide');
+}
+
+function collapse(s, b) {
+    if (b)
+        $(`#${s}`).collapse('show');
+    else
+        $(`#${s}`).collapse('hide');
 }
 
 window.anchorLink = {

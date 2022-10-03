@@ -1,54 +1,40 @@
-<div id="klavierunterricht" class="container-fluid bg-klavierunterricht">
-    <div class="align-items-center row justify-content-center fullHeight90">
-        <div class="col-md-4 my-2 mx-5">
-            <img src="images/IMG_2972.JPG" alt="Sängerin" style="object-fit: cover; width: 100%"/>
-        </div>
-        <div class="col-md-5 my-2">
-            <div class="text-black h1 pb-2">
-                @*
-                <div style="margin-right: 20%">
-                    <div class="character_justify">
-                        ganzheitlicher
-                    </div>
-                </div>
-                *@
+<div id="klavierunterricht" class="container-fluid bg-klavierunterricht py-3">
+
+    <div class="align-items-center row justify-content-center @(!isMobile ? "fullHeight90" : "") mx-auto" style="max-width: 1200px">
+        @if (!isMobile)
+        {
+            <div class="col my-2 mx-4 text-center" style="max-width: 400px">
+                <img src="images/IMG_2972.jpg" alt="Sängerin" style="object-fit: cover; width: 100%"/>
+            </div>
+        }
+        <div class="col my-2">
+            <div class="text-black h1 pb-2" style="overflow-x: hidden">
                 <div class="character_justify">
                     Klavierunterricht
                 </div>
             </div>
-            <div class="text" style="font-size: .9rem; line-height: 1.4em; letter-spacing: .1em">
-                Klavierspielen hat meiner Meinung nach einen ganz besonderen Zauber. Nicht nur wie viele
-                verschiedene
-                Musikstile man auf einem Klavier wunderbar ausdrücken kann, auch wie leicht man durch die
-                Klaviertastatur Musiktheorie verstehen kann oder wie man mit wenig schon so viel Wohlklingendes
-                herausholen kann, um nur einige Beispiele zu nennen.
-                <br>
-                <br>
-                Da ich selbst als Erwachsene erst angefangen habe Klavier zu spielen, unterrichte ich besonders
-                gerne
-                „Spätstarter“, da ich mich gut in sie hineinversetzen kann. Erwachsene lernen sehr bewusst und das
-                kann
-                viel Freude machen, denn man lernt dabei auch einiges über sich selbst und es ist sehr wertvoll im
-                oft 
-                stressigen Alltag etwas zu haben, wo man ganz bei sich ankommt und einen ganz anderen Fokus als
-                gewöhnlich hat. Natürlich sind auch Kinder herzlich bei mir willkommen.
-                <br>
-                <br>
-                Dank dem ganzheitlichen Unterrichtskonzept namens „Schneemanns Traum“, das auf den Erkenntnissen der
-                Gehirnforschung basiert, lernen bei mir Kinder und Erwachsene schnell(er) und einfach(er) Klavier
-                spielen. Ich lerne meinen Schülern auch von Anfang an Musiktheorie auf spannende Art und Weise zu
-                verstehen und anzuwenden, z. B. in Bezug auf einfacher Begleitung von sämtlichen Lieder mit
-                Akkorden.
-                <br>
-                <br>
-                Es ist mir auch wichtig auf Deine Vorlieben, was Musik angeht, einzugehen. Denn was Freude macht,
-                das
-                motiviert und das ist das Allerwichtigste beim Lernen!
+            <div class="text">
+                @if (isMobile)
+                {
+                    <div class="float-start me-3 align-self-start" style="max-width: 200px">
+                        <img src="images/IMG_2972.jpg" alt="Sängerin" style="object-fit: cover; width: 100%"/>
+                    </div>
+                }
+
+                @{
+                    var klavierTextCollapsed = "Klavierspielen hat meiner Meinung nach einen ganz besonderen Zauber. Nicht nur wie viele verschiedene Musikstile man auf einem Klavier wunderbar ausdrücken kann, auch wie leicht man durch die Klaviertastatur Musiktheorie verstehen kann oder wie man mit wenig schon so viel Wohlklingendes herausholen kann, um nur einige Beispiele zu nennen.";
+                    var klavierTextExpanded = "Da ich selbst als Erwachsene erst angefangen habe Klavier zu spielen, unterrichte ich besonders gerne „Spätstarter“, da ich mich gut in sie hineinversetzen kann. Erwachsene lernen sehr bewusst und das kann viel Freude machen, denn man lernt dabei auch einiges über sich selbst und es ist sehr wertvoll im oft stressigen Alltag etwas zu haben, wo man ganz bei sich ankommt und einen ganz anderen Fokus als gewöhnlich hat. Natürlich sind auch Kinder herzlich bei mir willkommen.\n\nDank dem ganzheitlichen Unterrichtskonzept namens „Schneemanns Traum“, das auf den Erkenntnissen der  Gehirnforschung basiert, lernen bei mir Kinder und Erwachsene schnell(er) und einfach(er) Klavier spielen. Ich lerne meinen Schülern auch von Anfang an Musiktheorie auf spannende Art und Weise zu verstehen und anzuwenden, z. B. in Bezug auf einfacher Begleitung von sämtlichen Lieder mit Akkorden.\n\nEs ist mir auch wichtig auf Deine Vorlieben, was Musik angeht, einzugehen. Denn was Freude macht, das  motiviert und das ist das Allerwichtigste beim Lernen!";
+                }
+
+                <ExpandableText DefaultText="@klavierTextCollapsed" ExpandedText="@klavierTextExpanded"/>
             </div>
         </div>
     </div>
+
+    <MediaQuery Media="@Breakpoints.SmallDown" @bind-Matches="isMobile"/>
 </div>
 
 @code {
-    
+
+    private bool isMobile;
 }

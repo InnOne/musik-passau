@@ -3,4 +3,10 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 2s;
+}
+
+.blur {
+    filter: blur(6px);
+    opacity: .6;
 }

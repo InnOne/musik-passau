@@ -1,0 +1,65 @@
+@inject IJSRuntime JsRuntime
+
+@DefaultText
+<br>
+<br>
+
+<p id="@guid" class="collapse" style="white-space: pre-wrap">
+    @ExpandedText
+</p>
+
+<div class="@(isMobile ? "text-center" : "")">
+    @if (IsExpanded)
+    {
+        <a class="text-black button-link button-link-small overflow-visible p-3" @onclick="Collapse" style="cursor: pointer">weniger</a>
+    }
+    else
+    {
+        <a class="text-black button-link button-link-small overflow-visible p-3" @onclick="Unfold" style="cursor: pointer">mehr</a>
+    }
+</div>
+
+<MediaQuery Media="@Breakpoints.SmallDown" @bind-Matches="isMobile"/>
+
+@code {
+
+    [Parameter]
+    public bool IsExpanded
+    {
+        get => isExpanded;
+        set
+        {
+            if (isExpanded == value)
+                return;
+
+            isExpanded = value;
+            IsExpandedChanged.InvokeAsync(isExpanded);
+        }
+    }
+
+    [Parameter]
+    public EventCallback<bool> IsExpandedChanged { get; set; }
+
+    private string guid = Guid.NewGuid().ToString();
+
+    [Parameter]
+    public string DefaultText { get; set; }
+
+    [Parameter]
+    public string ExpandedText { get; set; }
+
+    private async Task Collapse()
+    {
+        await JsRuntime.InvokeVoidAsync("collapse", guid, false);
+        IsExpanded = false;
+    }
+
+    private async Task Unfold()
+    {
+        await JsRuntime.InvokeVoidAsync("collapse", guid, true);
+        IsExpanded = true;
+    }
+
+    private bool isMobile;
+    private bool isExpanded;
+}

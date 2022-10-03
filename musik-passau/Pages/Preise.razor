@@ -1,14 +1,14 @@
 @using ViewModels
-<div id="preise" class="container-fluid bg-preise pt-5">
-    <div class="text-center">
+<div id="preise" class="container-fluid bg-preise py-5 px-3">
+    <div class="text-center pt-3">
         <h1>Preise</h1>
     </div>
 
-    <div class="row mx-3">
+    <div class="row justify-content-center mx-auto" style="max-width: 1200px">
         @foreach (var info in preisInfos)
         {
-            <div class="col-md px-4">
-                <div class="row" style="height: 60%">
+            <div class="col-md px-4" style="max-width: 400px">
+                <div class="row" style="min-height: 60%">
                     <div class="col-auto text-vertical-display text-end ps-3 pe-5">
                         @info.Titel
                     </div>
@@ -16,24 +16,20 @@
                         <img src="@info.ImageSrc" alt="@info.Titel" style="object-fit: cover; width: 100%">
                     </div>
                 </div>
-                <div class="price-box">
-                    <div class="p-2 bg-white" style="font-size: .7rem">
-                        <p>
-                            @foreach (var s in info.PreisText.Split("\n"))
-                            {
-                                @s
-                                <br>
-                            }
+                <div class="price-box bg-white">
+                    <div class="p-2" style="font-size: .6em">
+                        <p class="m-0 text text-start">
+                            @info.PreisText
                         </p>
                         @if (info.VertragInfos != null)
                         {
-                            <div class="text-end">
-                                <button type="button" class="btn btn-outline-dark" style="font-size: .7rem" @onclick="() => info.Modal!.Open()">
-                                    Vertragsvarianten ansehen
-                                </button>
+                            <div class="text-end pt-2">
+                                <a class="text-black button-link overflow-visible p-3" @onclick="() => info.Modal!.Open()" style="font-size: 1em; cursor: pointer">
+                                    Vertragsvarianten
+                                </a>
                             </div>
 
-                            <VertragInfoModal @ref="@info.Modal" VertragInfos="@info.VertragInfos" />
+                            <VertragInfoModal @ref="@info.Modal" VertragInfos="@info.VertragInfos"/>
                         }
                     </div>
                 </div>
@@ -53,14 +49,14 @@
             new PreisInfo
             {
                 Titel = "Hochzeitsduo",
-                ImageSrc = "images/IMG_2933.JPG",
-                PreisText = "Gage für Duo mit Klavierbegleitung:\n\n200 € pro Stunde"
+                ImageSrc = "images/IMG_2933.jpg",
+                PreisText = "Gage für Duo mit Klavierbegleitung:\n200 € pro Stunde"
             },
             new PreisInfo
             {
                 Titel = "Gesangscoaching",
-                ImageSrc = "images/IMG_2953.JPG",
-                PreisText = "Probestunde:\n35 €",
+                ImageSrc = "images/IMG_2953.jpg",
+                PreisText = "Probestunde: 35 €",
                 VertragInfos = new VertragInfo[]
                 {
                     new() {Text = "Jahresvertrag 12 x 135 €", Titel = "46 Std. / Jahr, wöchentlich 45 Min."},
@@ -72,8 +68,8 @@
             new PreisInfo
             {
                 Titel = "Klavierunterricht",
-                ImageSrc = "images/IMG_2970.JPG",
-                PreisText = "Probestunde:\n30 €",
+                ImageSrc = "images/IMG_2970.jpg",
+                PreisText = "Probestunde: 30 €",
                 VertragInfos = new VertragInfo[]
                 {
                     new() {Text = "Jahresvertrag Erwachsene 12 x 115 €", Titel = "46 Std. / Jahr, wöchentlich 45 Min."},

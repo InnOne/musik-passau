@@ -132,6 +132,9 @@ a, .btn-link {
 .text {
     width: 100%;
     text-align: justify;
+    font-size: .9rem; 
+    line-height: 1.4em; 
+    letter-spacing: .1em
 }
 
 /*@media (max-width: 1024px) {*/
@@ -146,6 +149,10 @@ a, .btn-link {
     }
 }
 
+p {
+    white-space: pre-wrap;
+}
+
 .nav-link {
     padding: 0;
 }
@@ -155,10 +162,15 @@ a, .btn-link {
 }
 
 .button-link {
+    text-align: center;
     text-decoration: none;
     letter-spacing: 0;
     background-image: url("../images/button.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.button-link-small {
+    background-image: url("../images/button_2.png");
 }

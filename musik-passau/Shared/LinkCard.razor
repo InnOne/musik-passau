@@ -1,5 +1,7 @@
-<div class="col-md-3 row text-black">
-    <img class="pb-2" src="@ImageSrc" alt="Sängerin" style="object-fit: cover; object-position: bottom; width: 100%"/>
+<div class="col-sm row text-black py-2">
+    <div class="text-center">
+        <img class="pb-2" src="@ImageSrc" alt="@Text" style="object-fit: cover; width: 100%; max-width: 50vw"/>
+    </div>
     <div class="text-center py-3" style="font-size: 1.2em">
         @Text
     </div>
@@ -18,5 +20,4 @@
 
     [Parameter]
     public string ImageSrc { get; set; }
-
 }
