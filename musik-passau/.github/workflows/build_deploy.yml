@@ -1,0 +1,38 @@
+name: ⚙️ Build and 🚀 Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: ⚙️ Build and 🚀 Deploy
+    runs-on: ubuntu-latest
+    environment: production
+    
+    env:
+      Project_Directory: musik-passau
+      Configuration: Release
+    
+    steps:
+      - uses: actions/checkout@v3
+        
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x
+      - name: Restore dependencies
+        run: dotnet restore
+        
+      - name: Build
+        run: dotnet build --no-restore -c $env:Configuration
+
+      - name: 📂 Upload files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
+        with:
+          server: wp13881958.server-he.de
+          username: ftp13881958-julian
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./${{ env.Project_Directory }}/bin/Release/net6.0/publish/wwwroot/
