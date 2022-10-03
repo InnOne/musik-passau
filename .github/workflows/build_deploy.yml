@@ -23,8 +23,8 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
-      - name: Build
-        run: dotnet publish --no-restore
+      - name: Build and Publish
+        run: dotnet publish --no-restore -c Release
 
       - name: 📂 Upload files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
@@ -32,4 +32,4 @@ jobs:
           server: wp13881958.server-he.de
           username: ftp13881958-julian
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: $GITHUB_WORKSPACE/musik-passau/bin/Release/net6.0/publish/wwwroot/
+          local-dir: ./musik-passau/bin/Release/net6.0/publish/wwwroot/
