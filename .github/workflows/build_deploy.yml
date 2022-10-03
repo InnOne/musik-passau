@@ -14,7 +14,6 @@ jobs:
     
     env:
       Project_Directory: musik-passau
-      Configuration: Release
     
     steps:
       - uses: actions/checkout@v3
@@ -27,7 +26,7 @@ jobs:
         run: dotnet restore
         
       - name: Build
-        run: dotnet build --no-restore -c $env:Configuration
+        run: dotnet build --no-restore
 
       - name: 📂 Upload files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
