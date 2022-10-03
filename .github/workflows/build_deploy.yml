@@ -37,4 +37,4 @@ jobs:
           server: wp13881958.server-he.de
           username: ftp13881958-julian
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./bin/Release/net6.0/publish/wwwroot/
+          local-dir: ./musik-passau/bin/Release/net6.0/publish/wwwroot/
