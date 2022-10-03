@@ -13,7 +13,7 @@ jobs:
     environment: production
     
     env:
-      Project_Directory: musik-passau
+      Project_Directory: musik-passau/musik-passau
     
     steps:
       - uses: actions/checkout@v3
@@ -26,7 +26,7 @@ jobs:
         run: dotnet restore
         
       - name: Build
-        run: dotnet build --no-restore
+        run: dotnet build --no-restore -c Release
 
       - name: 📂 Upload files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
