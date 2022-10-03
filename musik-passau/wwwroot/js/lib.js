@@ -1,11 +1,15 @@
 function checkScrollSpy() {
-    var scrollSpys = [].slice.call(document.querySelectorAll("[data-bs-spy=\"scroll\"]"));
-    var scrollSpysLength = scrollSpys.length;
+    try {
+        var scrollSpys = [].slice.call(document.querySelectorAll("[data-bs-spy=\"scroll\"]"));
+        var scrollSpysLength = scrollSpys.length;
 
-    for (var i = scrollSpysLength; i--;) {
-        var $spy = $(scrollSpys[i]);
+        for (var i = scrollSpysLength; i--;) {
+            var $spy = $(scrollSpys[i]);
 
-        $.fn['scrollspy'].call($spy, $spy.data());
+            $.fn['scrollspy'].call($spy, $spy.data());
+        }
+    } catch {
+        // ignore
     }
 }
 
