@@ -13,7 +13,7 @@ jobs:
     environment: production
     
     env:
-      Project_Directory: musik-passau/musik-passau
+      Project_Directory: musik-passau
     
     steps:
       - uses: actions/checkout@v3
