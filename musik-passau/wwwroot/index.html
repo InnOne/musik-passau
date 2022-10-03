@@ -15,7 +15,12 @@
 <script src="js/letterJustifier.js"></script>
 <script src="js/lib.js"></script>
 <body onresize="Justify()" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="200">
-    <div id="app"></div>
+    <div id="app">
+        <div class="fullHeight d-flex flex-column justify-content-center align-items-center">
+            <img alt="Seite lädt.." src="images/animatedLoading.gif" style="max-height: 30vh" />
+            <h3>Seite lädt..</h3>
+        </div>
+    </div>
 
     <div id="blazor-error-ui">
         An unhandled error has occurred.
