@@ -26,7 +26,7 @@ jobs:
         run: dotnet build --no-restore -c Release
         
       - name: Navigate to Workspace
-        run: cd $GITHUB_WORKSPACE/musik-passau
+        run: cd $GITHUB_WORKSPACE/musik-passau/musik-passau
         
       - name: Where are we
         run: ls
