@@ -26,10 +26,9 @@ jobs:
         run: dotnet build --no-restore -c Release
         
       - name: Navigate to Workspace
-        run: cd $GITHUB_WORKSPACE
+        run: cd $GITHUB_WORKSPACE/musik-passau/bin/Release/net6.0
         
-      - name: Where are we
-        run: ls
+      - run: ls
 
       - name: 📂 Upload files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
@@ -37,4 +36,4 @@ jobs:
           server: wp13881958.server-he.de
           username: ftp13881958-julian
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./musik-passau/bin/Release/net6.0/publish/wwwroot/
+          local-dir: $GITHUB_WORKSPACE/musik-passau/bin/Release/net6.0/publish/wwwroot/
