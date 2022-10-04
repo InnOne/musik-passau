@@ -98,6 +98,10 @@ a, .btn-link {
     min-height: calc(90vh - var(--navbarHeight));
 }
 
+.fullHeight70 {
+    min-height: calc(70vh - var(--navbarHeight));
+}
+
 @media (max-width: 1024px) {
     body, html {
         font-size: 0.9rem;

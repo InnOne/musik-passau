@@ -1,6 +1,6 @@
 <div id="seite2" class="container-fluid bg-grey">
-    <div class="align-items-center row justify-content-center px-4 py-5">
-        <div class="col-md-7 px-0 py-3">
+    <div class="d-flex flex-column mx-auto justify-content-center px-4 py-5 @(!isMobile ? "fullHeight70" : "")" style="max-width: 1000px">
+        <div class="px-0 py-5">
             <div class="text-black h1 pb-4">
                 
                 @if (!isMobileSmall)
@@ -30,9 +30,11 @@
     </div>
 </div>
 
+<MediaQuery Media="@Breakpoints.SmallDown" @bind-Matches="isMobile"/>
 <MediaQuery Media="@Breakpoints.XSmallDown" @bind-Matches="isMobileSmall"/>
 
 @code {
 
     private bool isMobileSmall;
+    private bool isMobile;
 }
