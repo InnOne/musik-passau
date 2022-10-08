@@ -8,9 +8,9 @@ on:
 
 jobs:
   build:
-    name: ⚙️ Build and 🚀 Deploy
+    name: ⚙️ Build
     runs-on: ubuntu-latest
-    environment: production
+    environment: test
     
     steps:
       - uses: actions/checkout@v3
@@ -26,10 +26,68 @@ jobs:
       - name: Build and Publish
         run: dotnet publish --no-restore -c Release
 
+      - name: 📦 Cache Build
+        uses: actions/cache@v3
+        with:
+          path: ./musik-passau/bin/Release/net6.0/publish/wwwroot/
+          key: ${{ runner.os }}-build-${{ github.run_id }}
+          
+  stage:
+    name: 🪜 Staging
+    runs-on: ubuntu-latest
+    environment: publish_staging
+    needs: [build]
+    
+    steps:
+      - name: 📦 Load Build
+        id: restore
+        uses: actions/cache@v3
+        with:
+          path: ./musik-passau/bin/Release/net6.0/publish/wwwroot/
+          key: ${{ runner.os }}-build-${{ github.run_id }}
+            
+      - name: Check Build
+        if: steps.restore.outputs.cache-hit != 'true'
+        uses: actions/github-script@v3
+        with:
+          script: |
+            core.setFailed('Build not found')
+
       - name: 📂 Upload files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
-          server: wp13881958.server-he.de
-          username: ftp13881958-julian
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./musik-passau/bin/Release/net6.0/publish/wwwroot/
+          remote-dir: ./staging/
+  
+  publish:
+    name: 🚀 Deploy
+    runs-on: ubuntu-latest
+    environment: publish
+    needs: [stage]
+    
+    steps:
+      - name: 📦 Load Build
+        id: restore
+        uses: actions/cache@v3
+        with:
+          path: ./musik-passau/bin/Release/net6.0/publish/wwwroot/
+          key: ${{ runner.os }}-build-${{ github.run_id }}
+            
+      - name: Check Build
+        if: steps.restore.outputs.cache-hit != 'true'
+        uses: actions/github-script@v3
+        with:
+          script: |
+            core.setFailed('Build not found')
+
+      - name: 📂 Upload files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./musik-passau/bin/Release/net6.0/publish/wwwroot/
+          remote-dir: ./publish/
