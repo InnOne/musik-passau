@@ -10,7 +10,6 @@ jobs:
   build:
     name: ⚙️ Build
     runs-on: ubuntu-latest
-    environment: test
     
     steps:
       - uses: actions/checkout@v3
@@ -60,7 +59,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./musik-passau/bin/Release/net6.0/publish/wwwroot/
-          remote-dir: ./staging/
+          server-dir: ./staging/
   
   publish:
     name: 🚀 Deploy
@@ -90,4 +89,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./musik-passau/bin/Release/net6.0/publish/wwwroot/
-          remote-dir: ./publish/
+          server-dir: ./publish/
