@@ -1,7 +1,7 @@
 <div id="hochzeitsduo" class="bg-musikalische-untermalung py-3">
 
     <div class="row pt-5 mx-auto @(!isMobile ? "fullHeight70" : "")" style="max-width: 1200px">
-        <div class="col my-2 align-self-end" style="@(!isMobile ? "max-width: 35%" : "")">
+        <div class="col mt-2 align-self-end" style="@(!isMobile ? "max-width: 35%" : "")">
             <div class="text-black h1 pb-2 pt-5">
                 <div class="character_justify" style="overflow-x: hidden">
                     Hochzeitsduo
@@ -12,7 +12,8 @@
                 @if (isMobile)
                 {
                     <div class="float-end mb-3 ms-3 align-self-end" style="max-width: 400px">
-                        <img src="images/duo.jpg" alt="Sängerin" style="object-fit: cover; width: 100%"/>
+                        @*<img src="images/duo.jpg" alt="Sängerin" style="object-fit: cover; width: 100%"/>*@
+                        <iframe src="https://www.youtube.com/embed/yFmY7TnAxgM" title="YouTube video player" style="border: 0; width: 100%; aspect-ratio: 16/10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 }
                 
@@ -25,24 +26,24 @@
 
                 @if (!isMobile)
                 {
-                    <div class="mt-5">
-                        <h4>Hörprobe auf <a class="link-dark" target="_blank" href="https://youtu.be/yFmY7TnAxgM">YouTube</a></h4>
-                        <iframe src="https://www.youtube.com/embed/yFmY7TnAxgM" title="YouTube video player" style="border: 0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="mt-5 h4">
+                        <div>Hörprobe auf <a class="link-dark" target="_blank" href="https://youtu.be/yFmY7TnAxgM">YouTube</a></div>
                     </div>
                 }
             </div>
         </div>
         @if (!isMobile)
         {
-            <div class="col m-0 ms-3 mt-3 align-self-end" style="max-width: 1000px">
-                <img src="images/duo.jpg" alt="Sängerin" style="object-fit: cover; width: 100%"/>
+            <div class="col m-0 mb-1 ms-3 mt-3 align-self-end" style="max-width: 1000px">
+                @*<img src="images/duo.jpg" alt="Sängerin" style="object-fit: cover; width: 100%"/>*@
+                <iframe src="https://www.youtube.com/embed/yFmY7TnAxgM" title="YouTube video player" style="border: 0; width: 100%; aspect-ratio: 16/10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         }
         else
         {
             <div class="mt-5">
                 <h4>Hörprobe auf <a class="link-dark" target="_blank" href="https://youtu.be/yFmY7TnAxgM">YouTube</a></h4>
-                <iframe src="https://www.youtube.com/embed/yFmY7TnAxgM" title="YouTube video player" style="border: 0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                @*<iframe src="https://www.youtube.com/embed/yFmY7TnAxgM" title="YouTube video player" style="border: 0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>*@
             </div>
         }
     </div>
