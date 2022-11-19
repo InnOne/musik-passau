@@ -22,7 +22,7 @@
                             <div class="col-sm p-2 align-self-center"
                                  style="font-size: .9rem; line-height: 1.4em; letter-spacing: .1em">
                                 <h5>
-                                    <strong>@schuelerstimme.Name, @((int) ((DateTime.Now - schuelerstimme.Geburtstag).Days / 365.25)), @(schuelerstimme.SchuelerTyp == SchuelerTyp.Gesang ? "Gesangsschüler" : "Klavierschüler")@(schuelerstimme.Maennlich ? "" : "in") seit @schuelerstimme.SchuelerSeit</strong>
+                                    <strong>@schuelerstimme.Ueberschrifft</strong>
                                 </h5>
                                 <p class="text text-start">
                                     @schuelerstimme.Bewertung
@@ -72,6 +72,20 @@
                 Bewertung = "Bereits in meiner ersten Klavierstunde wurde schnell deutlich, dass Jasmin in der Musik nicht nur sehr erfahren, sondern dort auch zu Hause ist.\nAuch seither fühle ich mich in jeder einzelnen Einheit besonders wohl und kann ohne Druck, aber mit trotzdem spürbaren Fortschritten, lernen.\n\nJasmin ist wirklich verständnisvoll und jederzeit darauf bedacht, ihren Schülern so vieles wie möglich zur Unterstützung zu bieten. Sie ergänzt die Lektionen aus dem Buch „Schneemann's Traum“ wunderbar mit der zugehörigen Musiktheorie und teilt zusätzlich ihre eigenen Gedankenstützen. So bleibt auch das Wissen eines Schülers, der nach klassischen Methoden Klavierspielen lernt, nicht aus.",
                 SchuelerTyp = SchuelerTyp.Klavier
             },
+            new Schuelerstimme($"Naemi {DateTime.Today.Year - 2016} und Timea {DateTime.Today.Year - 2017}, Klavierschülerinnen seit 2020 und 2022")
+            {
+                ImageSrc = "images/schueler/naemi_timea.jpg",
+                Bewertung = "Unsere Töchter haben beide jeweils mit 4 Jahren mit dem Klavierunterricht bei Jasmin angefangen und wir sind begeistert, was sie jetzt alles schon können. Jasmins ruhige und ermutigende Art lässt die Freude an der Musik und am Lernen jedes Mal mehr wachsen. Danke dafür! Wir können den Unterricht uneingeschränkt empfehlen."
+            },
+            new Schuelerstimme
+            {
+                Name = "Tabea",
+                Geburtstag = new DateTime(1990, 11, 1),
+                SchuelerSeit = 2022,
+                ImageSrc = "images/schueler/tabea.jpg",
+                Bewertung = "Ich bin nun seit Juli 2022 bei Jasmin im Gesangsunterricht und muss sagen: Ich bin total begeistert!! Sie hört genau heraus, was ich brauche und kann mir entsprechende Übung und Unterstützung bieten. Sie motiviert mich nonstop durch ihr konkretes Feedback und Lob. Sie kann alles so bildhaft und verständlich erklären, dass ich mich super leicht tue und das Gefühl habe, mega Fortschritte zu machen. Alles in allem kann ich Jasmin nur jedem empfehlen und wünschte, ich hätte in jungen Jahren so eine tolle Gesangslehrerin gehabt! Freue mich schon auf die nächste Stunde!",
+                SchuelerTyp = SchuelerTyp.Gesang
+            },
             new Schuelerstimme
             {
                 Name = "Annette",
@@ -89,7 +103,7 @@
                 ImageSrc = "images/schueler/mareen.jpg",
                 Bewertung = "Ich fühle mich bei Jasmin sehr gut aufgehoben und bin froh, sie als Klavierlehrerin zu haben.\nIch freue mich jede Woche aufs Neue von ihr zu lernen!",
                 SchuelerTyp = SchuelerTyp.Klavier
-            }
+            },
         };
     }
 
