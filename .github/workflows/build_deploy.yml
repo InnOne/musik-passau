@@ -63,7 +63,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./musik-passau/bin/Release/net6.0/publish/wwwroot/
+          local-dir: ./musik-passau/bin/Release/net8.0/publish/wwwroot/
           server-dir: ./staging/
   
   publish:
