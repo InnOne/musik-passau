@@ -18,7 +18,10 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 6.0.x
-
+      
+      - name: Install WASM-Tools
+        run: dotnet workload install wasm-tools
+          
       - name: Restore dependencies
         run: dotnet restore
 
@@ -28,7 +31,7 @@ jobs:
       - name: 📦 Cache Build
         uses: actions/cache@v3
         with:
-          path: ./musik-passau/bin/Release/net6.0/publish/wwwroot/
+          path: ./musik-passau/bin/Release/net8.0/publish/wwwroot/
           key: ${{ runner.os }}-build-${{ github.run_id }}
           
   stage:
@@ -44,7 +47,7 @@ jobs:
         id: restore
         uses: actions/cache@v3
         with:
-          path: ./musik-passau/bin/Release/net6.0/publish/wwwroot/
+          path: ./musik-passau/bin/Release/net8.0/publish/wwwroot/
           key: ${{ runner.os }}-build-${{ github.run_id }}
             
       - name: Check Build
@@ -76,7 +79,7 @@ jobs:
         id: restore
         uses: actions/cache@v3
         with:
-          path: ./musik-passau/bin/Release/net6.0/publish/wwwroot/
+          path: ./musik-passau/bin/Release/net8.0/publish/wwwroot/
           key: ${{ runner.os }}-build-${{ github.run_id }}
             
       - name: Check Build
@@ -92,5 +95,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./musik-passau/bin/Release/net6.0/publish/wwwroot/
+          local-dir: ./musik-passau/bin/Release/net8.0/publish/wwwroot/
           server-dir: ./publish/
