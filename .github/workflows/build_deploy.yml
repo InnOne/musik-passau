@@ -17,7 +17,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: 6.0.x
+          dotnet-version: 8.0.x
       
       - name: Install WASM-Tools
         run: dotnet workload install wasm-tools
@@ -63,6 +63,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
           local-dir: ./musik-passau/bin/Release/net8.0/publish/wwwroot/
           server-dir: ./staging/
   
@@ -95,5 +96,6 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
           local-dir: ./musik-passau/bin/Release/net8.0/publish/wwwroot/
           server-dir: ./publish/
