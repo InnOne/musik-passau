@@ -7,6 +7,7 @@
 }
 
 .blur {
+    will-change: filter;
     filter: blur(6px);
     opacity: .6;
 }
